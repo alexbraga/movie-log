@@ -13,7 +13,7 @@
 </p>
 
 <h4 align="center">
-	 Status: Finished
+	 Status: In Production
 </h4>
 
 <p align="center">
@@ -84,25 +84,24 @@ Available at <a href="https://cinelog-js.netlify.app">https://cinelog-js.netlify
 4. <a href="#running-the-back-end">Run the back-end server</a>
 5. <a href="#running-the-front-end">Run the front-end server</a>
 
-### Pre-requisites
+## Pre-requisites
 
 Before getting started, you'll need to have the following tools installed on your machine:
 
 - [Git](https://git-scm.com)
 - [Node.js](https://nodejs.org/en/)
-- [npm](https://npmjs.com)
 - [MongoDB](https://www.mongodb.com/try/download/community)
 
 In addition, you'll need to register a [free] accout at [SendGrid](https://sendgrid.com/) and [TMDb](https://developers.themoviedb.org/3/getting-started/introduction) as well. You might also want an editor to work with the code, like
 [VS Code](https://code.visualstudio.com/).
 
-#### Clone this repository
+### Clone this repository
 
-```bash
-$ git clone https://github.com/alexbraga/cine-log.git
+```
+git clone https://github.com/alexbraga/cine-log.git
 ```
 
-#### Set the environment variables
+### Set the environment variables
 
 - Create a `.env` file at the root of both `client/` and `server/` folders, and place the following in each, with their respective values:
 
@@ -153,20 +152,24 @@ REFRESH_JWT_SECRET=
 GOOGLE_CLIENT_ID=
 ```
 
-#### Running the Back-end
+### Running the back-end
 
-```bash
-# Go to the server folder
-$ cd cine-log/server
-
-# Install the dependencies
-$ npm install
-
-# Run the application in development mode
-$ node server.js
-
-# The server will start at port 5000
+Navigate to the server folder
 ```
+cd cine-log/server
+```
+
+Install the dependencies
+```
+npm install
+```
+
+Run the server in development mode
+```
+node server.js
+```
+
+- The server will start at `localhost:5000`
 
 <!-- #### API Endpoints
 
@@ -174,20 +177,24 @@ $ node server.js
 
   - `GET` `/diary` -->
 
-#### Running the Front-end
+### Running the front-end
 
-```bash
-# Go to the client folder
-$ cd cine-log/client
-
-# Install the dependencies
-$ npm install
-
-# Run the application in development mode
-$ npm start
-
-# The application will automatically open on your browser at port 3000
+Navigate to the client folder
 ```
+cd cine-log/client
+```
+
+Install the dependencies
+```
+npm install
+```
+
+Run the client in development mode
+```
+npm start
+```
+
+- The application will automatically open on your default browser at http://localhost:3000
 
 ---
 
@@ -201,13 +208,16 @@ The following tools were used in the construction of the project:
 
 - **[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)**
 
+#### **Main library**
+
+- **[React](https://react.dev/)**
+
 #### **Dependencies**
 
 - **[Axios](https://axios-http.com/)**
 - **[Date-fns](https://date-fns.org/)**
 - **[dayjs](https://www.npmjs.com/package/dayjs)**
 - **[Material UI](https://mui.com)**
-- **[React](https://react.dev/)**
 - **[react-oauth/google](https://www.npmjs.com/package/@react-oauth/google)**
 - **[React Router v6](https://reactrouter.com/)**
 - **[React Scripts](https://www.npmjs.com/package/react-scripts)**
